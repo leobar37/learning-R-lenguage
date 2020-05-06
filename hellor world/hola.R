@@ -55,7 +55,6 @@ y <- matrix(c(1,2,3,4) , 2 , 2, byrow = T , dimnames = list( c("x1" ,"x2") , c("
 #second way
 y <- matrix (1:10, nrow=5)
 print(y)
-
 #cbind
 #  take a secuence of vector, matrix or data.frame arguments and 
 #  cobine by columns or rows respectively
@@ -68,3 +67,7 @@ print(example2);
 
 odd <-matrix(c(seq(1,12, by=2), nrow = 2 , ncol= 3,  byrow=T));
 print(odd)
+
+datos <- c("B", "N" ,"R" ,"B","R" ,"N","N","R","N","B");
+levels(datos)
+pie(tabla,main ="Diagrama de sectores")
